@@ -10,7 +10,6 @@
 ## Features
 
 - Ray tracing engine with support for:
-  - Spheres, planes, discs, triangles
   - Point light sources
   - Ambient lighting
   - Perspective camera
@@ -35,11 +34,11 @@ Scenes are described in plain text using one element per line. Parameters are sp
 
 ## Supported objects
 
-Each object is defined with its parameters on a single line. Common properties like color and material coefficients (ambient, diffuse, specular) are included. Specular exponent controls the shininess of the surface.
+Each object is defined with its parameters on a single line. Common properties like color and material coefficients (ambient, diffuse, specular) are included. Specular exponent controls the shininess of the surface. Supported objects: Plane, Disc, Sphere, Triangle, Cone
 
 ---
 
-### 🟦 Plane
+### Object format example – Plane
 
 ```txt
 pl  <position>  <normal_vector>  <color>  <amb,diff,spec>  <spec_exp>  [optional label]
